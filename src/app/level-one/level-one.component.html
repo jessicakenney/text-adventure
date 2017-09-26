@@ -1,0 +1,9 @@
+<h2> Start your story <img src="src/donut.png"  height="85" width="85"></h2>
+<h4> What Donut store do you want to go to in Portland ?</h4>
+<hr noshade>
+
+<div *ngFor="let story of storys" (click) = "goToStoryPage(story)" class="panel panel-warning">
+  <div class="panel-body">
+  <h3><em>{{story.title}}</em></h3>
+</div>
+  </div>
